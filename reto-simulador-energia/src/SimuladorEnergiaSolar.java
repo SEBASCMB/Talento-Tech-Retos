@@ -62,11 +62,12 @@ class CapturadorDatos {
 
         }
 
-        return new DatosEntrada(eficiencia, area, radiacion);
+        DatosEntrada datosEntrada = new DatosEntrada(eficiencia, area, radiacion);
+        sc.close();
+        return datosEntrada;
     }
 }
 
-// SRP: Solo realiza el cálculo de energía.
 class CalculadorEnergia {
 
     public static double calcularEnergia(DatosEntrada datos) {
@@ -74,7 +75,6 @@ class CalculadorEnergia {
     }
 }
 
-// SRP y OCP: Clasifica sin modificar el cálculo. Fácil de extender.
 class Clasificador {
 
     public void mostrarResultado(DatosEntrada datos, double energia) {
