@@ -41,3 +41,9 @@ El proyecto sigue una estructura simple:
 
 - **Principio de Responsabilidad Única (SRP):** Cada clase (`CapturadorDatos`, `CalculadorEnergia`, `Clasificador`) tiene una única responsabilidad.
 - **Abierto/Cerrado (OCP) (parcialmente):** La clase `Clasificador` está diseñada para ser extendida fácilmente con nuevas clasificaciones o lógicas de visualización sin modificar el cálculo de energía.
+
+# Diagrama UML
+
+![image](https://github.com/user-attachments/assets/71d924f7-bc74-4b8c-add1-3be25ee8c383)
+
+
